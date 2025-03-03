@@ -12,10 +12,10 @@ permalink: /CV
   - Millitary duty in ROK Army, Mar. 2019 - Oct. 2020
 
 ## Research Interests
- - Gaussian $\beta$-ensembles 
+ - Gaussian free field 
+ - Random interface theory
  - Statistical dynamics
- - Random matrix theory
- - Et cetera
+ - and related topics
 
 ## Publications
  - Not yet
