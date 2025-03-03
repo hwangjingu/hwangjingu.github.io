@@ -1,0 +1,37 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04-x64
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        run: |
+          # Install dependencies
+          sudo apt-get update -y
+          sudo apt-get install -y libssl-dev libreadline-dev zlib1g-dev
+          
+          # Install ruby-build
+          git clone https://github.com/rbenv/ruby-build.git /tmp/ruby-build
+          /tmp/ruby-build/install.sh
+          
+          # Install Ruby version (예: 3.1.4)
+          ruby-build 3.1.4 /opt/hostedtoolcache/Ruby/3.1.4/x64
+
+      - name: Mark Ruby installation as complete
+        run: touch /opt/hostedtoolcache/Ruby/3.1.4/x64.complete
+
+      - name: Install dependencies
+        run: gem install bundler
+
+      - name: Build and deploy
+        run: |
+          # 여기에 실제 빌드 및 배포 작업 추가
