@@ -4,8 +4,7 @@ layout: "single"
 excerpt: "Curriculum Vitae"
 permalink: /CV
 ---
-<!-- [PDF version CV](/files/CV/CV.pdf) -->
-
+[PDF version CV](/files/CV/Curriculum Vitae_Jingu Hwang.pdf) 
 ## Education
 - Integrated master’s/doctoral program, Department of Mathematical Sciences, KAIST, Mar. 2022 - Current
 - B.S. in Mathematics, Korea University, Mar. 2017 - Feb. 2022
